@@ -1,0 +1,15 @@
+C:\Users\Илья\Desktop\Обучение GB\3сurs\HomeWork_47,50,52\Task50\bin\Debug\net6.0\Task50.exe
+C:\Users\Илья\Desktop\Обучение GB\3сurs\HomeWork_47,50,52\Task50\bin\Debug\net6.0\Task50.deps.json
+C:\Users\Илья\Desktop\Обучение GB\3сurs\HomeWork_47,50,52\Task50\bin\Debug\net6.0\Task50.runtimeconfig.json
+C:\Users\Илья\Desktop\Обучение GB\3сurs\HomeWork_47,50,52\Task50\bin\Debug\net6.0\Task50.dll
+C:\Users\Илья\Desktop\Обучение GB\3сurs\HomeWork_47,50,52\Task50\bin\Debug\net6.0\Task50.pdb
+C:\Users\Илья\Desktop\Обучение GB\3сurs\HomeWork_47,50,52\Task50\obj\Debug\net6.0\Task50.csproj.AssemblyReference.cache
+C:\Users\Илья\Desktop\Обучение GB\3сurs\HomeWork_47,50,52\Task50\obj\Debug\net6.0\Task50.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Илья\Desktop\Обучение GB\3сurs\HomeWork_47,50,52\Task50\obj\Debug\net6.0\Task50.AssemblyInfoInputs.cache
+C:\Users\Илья\Desktop\Обучение GB\3сurs\HomeWork_47,50,52\Task50\obj\Debug\net6.0\Task50.AssemblyInfo.cs
+C:\Users\Илья\Desktop\Обучение GB\3сurs\HomeWork_47,50,52\Task50\obj\Debug\net6.0\Task50.csproj.CoreCompileInputs.cache
+C:\Users\Илья\Desktop\Обучение GB\3сurs\HomeWork_47,50,52\Task50\obj\Debug\net6.0\Task50.dll
+C:\Users\Илья\Desktop\Обучение GB\3сurs\HomeWork_47,50,52\Task50\obj\Debug\net6.0\refint\Task50.dll
+C:\Users\Илья\Desktop\Обучение GB\3сurs\HomeWork_47,50,52\Task50\obj\Debug\net6.0\Task50.pdb
+C:\Users\Илья\Desktop\Обучение GB\3сurs\HomeWork_47,50,52\Task50\obj\Debug\net6.0\Task50.genruntimeconfig.cache
+C:\Users\Илья\Desktop\Обучение GB\3сurs\HomeWork_47,50,52\Task50\obj\Debug\net6.0\ref\Task50.dll
