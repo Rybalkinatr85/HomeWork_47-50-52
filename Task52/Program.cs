@@ -6,27 +6,62 @@
 // 8 4 2 4
 // Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
 
-Random random = new Random();
-int[,] arr = new int[random.Next(1, 10), random.Next(1, 10)];
+Console.Write("Введите количество строк: ");
+int rows = int.Parse (Console.ReadLine()!);
 
-for (int i = 0; i < arr.GetLength(0); i++)
+Console.Write("Введите количество столбцов: ");
+int columns = int.Parse (Console.ReadLine()!);
+
+int[,] numbers = new int[rows, columns];
+FillArray2D(numbers);
+PrintArray2D(numbers);
+
+double[] avgNumbers = new double[numbers.GetLength(1)];
+
+for (int i = 0; i < numbers.GetLength(1); i++)
 {
-    for (int j = 0; j < arr.GetLength(1); j++)
+    double result = 0.0;
+    for (int j = 0; j < numbers.GetLength(0); j++)
     {
-        arr[i, j] = random.Next(1, 10);
-        Console.Write(arr[i, j] + " ");
+        result += numbers[j, i];
+    }
+    avgNumbers[i] = result / numbers.GetLength(0);
+}
+PrintArray(avgNumbers);
+
+
+// Заполнение массива рандомными вещественными числами
+void FillArray2D(int[,] array)
+{
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            array[i, j] = new Random().Next(1, 10);
+        }
+    }
+}
+
+//  Функция вывода двумерного массива в терминал
+void PrintArray2D(int[,] array)
+{
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            Console.Write(array[i, j] + " ");
+        }
+        Console.WriteLine();
     }
     Console.WriteLine();
 }
-Console.WriteLine("---------------------------");
-Console.WriteLine(arr.GetLength(0));
-for (int j = 0; j < arr.GetLength(1); j++)
+
+// Функция вывода массива в терминал 
+void PrintArray(double[] array)
 {
-    double sum = 0;
-    for (int i = 0; i < arr.GetLength(0); i++)
+    for (int i = 0; i < array.Length; i++)
     {
-        sum += arr[i, j];
+        Console.Write(array[i] + " ");
     }
-    Console.Write($"{ sum / arr.GetLength(0)}; ");
+    Console.WriteLine();
 }
-Console.ReadLine();
