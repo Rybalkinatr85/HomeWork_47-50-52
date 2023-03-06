@@ -7,29 +7,48 @@
 // 1 7 -> такого числа в массиве нет
 
 Console.Write("Введите строку: ");
-int pos1 = Convert.ToInt32(Console.ReadLine()) - 1;
+int rows = Convert.ToInt32(Console.ReadLine()!) - 1;
+
 Console.Write("Введите столбец: ");
-int pos2 = Convert.ToInt32(Console.ReadLine()) - 1;
-int n = 5; 
-int m = 7; 
-Random random = new Random();
-int[,] arr = new int[n, m];
-Console.WriteLine("Исходный массив: ");
-for (int i = 0; i < arr.GetLength(0); i++)
+int columns = Convert.ToInt32(Console.ReadLine()!) - 1;
+
+int[,] numbers = new int[6, 8];
+FillArray2D(numbers);
+PrintArray2D(numbers);
+
+if (rows < numbers.GetLength(0) && columns < numbers.GetLength(1)) Console.WriteLine(numbers[rows, columns]);
+else Console.WriteLine($"{rows}{columns} -> такого числа в массиве нет");
+
+
+// Заполнение массива рандомными числами от 1 до 9
+void FillArray2D(int[,] array)
 {
-    for (int j = 0; j < arr.GetLength(1); j++)
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            array[i, j] = new Random().Next(1, 10);
+        }
+    }
+}
+
+//  Функция вывода массива в терминал
+void PrintArray2D(int[,] array)
 {
-    arr[i, j] = random.Next(1, 10);
-Console.Write("{0} ", arr[i, j]);
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            Console.Write(array[i, j] + " ");
+        }
+        Console.WriteLine();
+    }
+    Console.WriteLine();
 }
-Console.WriteLine();
-}
-    if (pos1 < 0 | pos1 > arr.GetLength(0) - 1 | pos2 < 0 | pos2 > arr.GetLength(1) - 1)
+
+// Функция ввода 
+int ReadInt(string message)
 {
-Console.WriteLine("Такого числа в массиве нет  ");
+    Console.Write(message);
+    return Convert.ToInt32(Console.ReadLine());
 }
-    else
-{
-    Console.WriteLine("Значение элемента массива = {0}", arr[pos1, pos2]);
-}
-Console.ReadLine();
